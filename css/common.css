@@ -1,0 +1,20 @@
+font-family {
+    font-family: Open Sans;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    font-family: Open Sans;
+}
+
+.logotype {
+    left: -0.25%;
+    right: 91.76%;
+    top: 0%;
+    bottom: 0%;
+}
