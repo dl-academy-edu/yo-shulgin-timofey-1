@@ -1,20 +1,14 @@
-font-family {
-    font-family: Open Sans;
+* {
+    margin: 0;
+    padding: 0
 }
 
 a {
-    list-style: none;
     text-decoration: none;
-    list-style-type: none;
+    color: black;
+    list-style: none;
 }
 
 header {
-    font-family: Open Sans;
-}
-
-.logotype {
-    left: -0.25%;
-    right: 91.76%;
-    top: 0%;
-    bottom: 0%;
+    margin-left: auto;
 }
