@@ -4,24 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Main</title>
+    <style>
+        /*Rating*/
+        .rating{
+            margin: 0 0 1em 0;
+            padding: 0;
+            border: none;
+        }
+        .rating_caption{
+            margin-bottom: 0.5em;
+            padding: 0;
+        }
+        .rating_group{
+            position: relative;
+            width: 10em;
+            height: 2em;
+            background-image: url();
+        }
+        .rating_star{
+            position: absolute;
+            top: 0;
+            left: 0;            
+            height: 2em;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        /*Options*/
+        .rating_star:nth-of-type(1){
+            z-index: 5;
+            width: 2em;
+        }
+        .rating_star:nth-of-type(2){
+            z-index: 4;
+            width: 4em;
+        }
+        .rating_star:nth-of-type(3){
+            z-index: 3;
+            width: 6em;
+        }
+        .rating_star:nth-of-type(4){
+            z-index: 2;
+            width: 8em;
+        }
+        .rating_star:nth-of-type(5){
+            z-index: 1;
+            width: 10em;
+        }     
+    </style>
 </head>
 <body>
     <header>
-        <a href="/"><img src="" alt="логотип сайта"></a>
+        <div>
+            <a href="/index.html" class=".logotype"><img src="./img/icon/logo.png" alt="Logo" width="101" height="52"></a> 
+        </div>
         <nav>
           <ul>
-           <li><a href="#">BLOG</a></li>
-           <li><a href="#">CATALOG</a></li>
-           <li><a href="#">ABOUT US</a></li>           
+           <li><a href="/blog.html" style="font-family: Open Sans;">BLOG</a></li> 
+           <li><a href="/catalog.html" style="font-family: Open Sans;">CATALOG</a></li><!--я перепроперил все подряд не получается почему-то переходить с основы на каталог посмотри что не так просто я уже не знаю что делать-->
+           <li><a href="/about-us.html" style="font-family: Open Sans;">ABOUT US</a></li>           
           </ul>
           <ul>
-            <li>
-                <a href="#"><img src="" alt="Поиск"></a>
-            </li>
-            <li>
-                <a href="#">CONTACT US</a>
-            </li>
+            <li><a href="#"><img src="./img/icon/search.svg" alt="search"></a></li>
+            <li><a href="/contact-us.html">CONTACT US</a></li>
           </ul>
         </nav>
     </header>
@@ -29,10 +80,10 @@
         <section>
             <div>
                 <p>01</p>                
-                <button type="button"><img src="" alt="Кнопка 1"></button> <!--в коментарии написано, что в кнопки нельзя вставлять картинки, я убрал ссылки, наверное ссылки вы имели в виду?-->
-                <button type="button"><img src="" alt="Кнопка 2"></button>
-                <button type="button"><img src="" alt="Кнопка 3"></button>
-                <button type="button"><img src="" alt="Кнопка 4"></button>
+                <button type="button"></button> <!--в коментарии написано, что в кнопки нельзя вставлять картинки, я убрал ссылки, наверное ссылки вы имели в виду?-->
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
             </div>
             <div>
             <h1>THE OOH NOO COLLECTION</h1>
@@ -40,23 +91,23 @@
             <button type="button">EXPLORE NOW</button>
             </div>
             <p>Free (continental) USA shipping on all orders of $100 USD or more!</p>
-                <img src="" alt="Монстр в тачке">
+                <img src="./img/monster1.png" alt="Monster1">
         </section>
     </main>
     <section>
         <h2>Category Products</h2>
         <ul>
-            <li><a href="#">APPAREL KIDS</a><img src="" alt="Свитер для ребенка"></li>
-            <li><a href="#">HOLIDAY SHOP</a><img src="" alt="Носок олень"></li>
-            <li><a href="#">TOYS</a><img src="" alt="Деревянная фигурка оленя"></li>
-            <li><a href="#">ACCESSORIES</a><img src="" alt="Какая то волосатая бубылда на скейте"></li>
+            <li><a href="#">APPAREL KIDS</a><img src="./img/babysweater.jpg" alt="Baby sweater" width="244" height="177"></li>
+            <li><a href="#">HOLIDAY SHOP</a><img src="./img/sockdeer.png" alt="Sock deer" width="208" height="244"></li>
+            <li><a href="#">TOYS</a><img src="./img/woodendeer.jpg" alt="Wooden figurine of a deer" width="270" height="270"></li>
+            <li><a href="#">ACCESSORIES</a><img src="./img/monkeyontheskate.png" alt="monkey on a skateboard" width="240" height="250"></li>
         </ul>
-        <button type="button"><img src="" alt="Кнопка влево"></button>
-        <button type="button"><img src="" alt="Кнопка вправо"></button>
+        <button type="button">Кнопка влево</button>
+        <button type="button">Кнопка вправо</button>
         <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
     </section>
     <section>
-        <img src="" alt="Офисное платье">
+        <img src="./img/officedress.jpg" alt="office dress" width="480" height="559">
         <div>
             <h2>Delivery</h2>
             <ul>
@@ -71,39 +122,43 @@
     </section>
     <section>
         <ul>
-            <li><a href="#"><img src="" alt="Логотип мэйл ру"></a></li>
-            <li><a href="#"><img src="" alt="Логотип эпэл"></a></li>
-            <li><a href="#"><img src="" alt="Логотип элтекс"></a></li>
-            <li><a href="#"><img src="" alt="Логотип овокс"></a></li>
+            <li>
+                <a href="https://mail.ru/"><img src="./img/mailru.png" alt="logotype mailru" width="193" height="60"></a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/"><img src="./img/apple.png" alt="logotype Apple" width="179" height="61"></a>
+            </li>
+            <li>
+                <a href="https://eltex-co.com/"><img src="./img/eltex.png" alt="logotype Eltex" width="216" height="46"></a>
+            </li>
+            <li>
+                <a href="https://www.owox.com/"><img src="./img/owox.png" alt="logotype Owox" width="211" height="40"></a>
+            </li>
         </ul>
     </section>
     <section>
         <h2>Design Life Kids</h2>
         <p>About Us</p>
         <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.  </p>
-        <a href="#">BUY NOW</a>
+        <a href="/catalog.html">BUY NOW</a>
         <h2>Contacts</h2>
         <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.537027345575!2d49.28883502508566!3d53.512465281983786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879a82611632d%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1668783377206!5m2!1sru!2sru" frameborder="0"></iframe>
     </section>
     <footer>
-        <section>
-            <ul>
-                <li>Navigation</li>
-                <li>Customer Information</li>
-                <li>Connect</li>
-            </ul>
         <nav>
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
+                <li>Navigation</li>
+                <li><a href="/about-us.html">About Us</a></li>
+                <li><a href="/blog.html">Blog</a></li>
                 <li><a href="#">Design Services</a></li>
                 <li><a href="#">Featured On</a></li>
                 <li><a href="#">2018 Holiday Catalog</a></li>
                 <li><a href="#">Shop By Designer</a></li>
             </ul>
             <ul>
-                <li><a href="#">Contact Us</a></li>
+                <li>Customer Information</li>              
+                <li><a href="/contact.html">Contact Us</a></li>
                 <li><a href="#">Sale Exclusions</a></li>
                 <li><a href="#">Shipping & Returns</a></li>
                 <li><a href="#">Terms & Conditions</a></li>
@@ -111,23 +166,28 @@
                 <li><a href="#">Search</a></li>
             </ul>
         </nav>
-            <input type="text" name="text" placeholder="Email">
-            <button type="submit">JOIN</button>
-            <ul>
-                <li><a href="#"><img src="" alt="Логотип фэйсбука"></a></li>
-                <li><a href="#"><img src="" alt="Логотип твитера"></a></li>
-                <li><a href="#"><img src="" alt="Логотип пинтереста"></a></li>
-                <li><a href="#"><img src="" alt="Логотип инстарамма"></a></li>
-            </ul>
+        <ul>
+            <li><p>Connect</p></li>            
+        </ul>   
+        <input type="text" name="text" placeholder="Email">  
+        <button type="submit">JOIN</button>   
+        <ul>
+            <li><a href="https://www.facebook.com/"><img src="./img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
+            <li><a href="https://twimg.com/"><img src="./img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
+            <li><a href="https://pinterest.com/"><img src="./img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
+            <li><a href="http://instagram.com/"><img src="./img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
+        </ul>
+        <hr>
             <ul>
                 <li><a href="#">Company Rating</a></li>
-                <li><img src="" alt="Звезда 1"></li>
-                <li><img src="" alt="Звезда 2"></li>
-                <li><img src="" alt="Звезда 3"></li>
-                <li><img src="" alt="Звезда 4"></li>
-                <li><img src="" alt="Звезда 5"></li>
+                <li><img src="./img/icon/star.svg" alt="Звезда 1"></li>
+                <li><img src="./img/icon/star.svg" alt="Звезда 2"></li>
+                <li><img src="./img/icon/star.svg" alt="Звезда 3"></li>
+                <li><img src="./img/icon/star.svg" alt="Звезда 4"></li>
+                <li><img src="./img/icon/star.svg" alt="Звезда 5"></li>
                 <li><a href="#">Copyright © 2018 Dlk • Design Life Kids</a></li>
-                <li><a href="#">Web Design — Direct Line Development</a></li>
+                <li><a href="#">Web Design — Direct Line Development</a>
+                </li>
             </ul>
         </section>
     </footer>
