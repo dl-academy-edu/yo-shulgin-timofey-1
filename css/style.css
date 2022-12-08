@@ -84,12 +84,9 @@
     margin-top: 90px;
 }
 
-.catprod {
-    display: flex;
-}
-
 .pupa {
     display: flex;
+    margin-top: 121px;
 }
 
 .podpupa {
@@ -102,3 +99,63 @@
 .megapupa {
     display: grid;
 }
+
+.mleft {
+    margin-left: 121px;
+}
+
+.delivery {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;    
+    padding-top: 30px;
+}
+
+.secdelivery {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
+}
+
+.guarantee {
+font-family: 'Crimson Text';
+font-style: italic;
+font-weight: 400;
+font-size: 26px;
+line-height: 34px;
+color: #1E0606;
+}
+
+.credit {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
+}
+
+.somedays {
+    padding-top: 30px;
+}
+
+
+.whatstarted {
+    padding-top: 30px;
+}
+
+.logos {
+    margin-top: 90px;
+}
+
+.logossec {
+    display: flex;
+}
+
