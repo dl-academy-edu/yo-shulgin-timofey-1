@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/contact-us.css">
+    <title>Contact Us</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="/index.html" class=".logotype"><img src="./img/icon/logo.png" alt="Logo" width="101" height="52"></a> 
-        </div>
-        <nav>
-          <ul>
-           <li><a href="/blog.html" style="font-family: Open Sans;">BLOG</a></li> 
-           <li><a href="/catalog.html" style="font-family: Open Sans;">CATALOG</a></li><!--я перепроперил все подряд не получается почему-то переходить с основы на каталог посмотри что не так просто я уже не знаю что делать-->
-           <li><a href="/about-us.html" style="font-family: Open Sans;">ABOUT US</a></li>           
-          </ul>
-          <ul>
-            <li><a href="#"><img src="./img/icon/search.svg" alt="search"></a></li>
-            <li><a href="/contact-us.html">CONTACT US</a></li>
+    <header class="header container">
+        <a href="/index.html"><img class="header__logo" src="./img/icon/logo.png" alt="Logo" width="101" height="52"></a>
+        <nav class="header__nav left">
+          <ul class="header__list">
+           <li><a href="/blog.html" style="font-family: Open Sans;" class="header__list-link">BLOG</a></li> 
+           <li><a href="/catalog.html" style="font-family: Open Sans;" class="header__list-link">CATALOG</a></li><!--я перепроперил все подряд не получается почему-то переходить с основы на каталог посмотри что не так просто я уже не знаю что делать-->
+           <li><a href="/about-us.html" style="font-family: Open Sans;" class="header__list-link">ABOUT US</a></li>           
           </ul>
         </nav>
+          <ul class="header__list header__nav">
+            <li><a href="#"><img class="search" src="./img/icon/search.svg" alt="Search"></a></li>
+            <li><a href="/contact-us.html" class="header__list-link">CONTACT US</a></li>
+          </ul>
     </header>
-    <main>
+    <main class="container">
         <section>
-            <h1>Contact  Us</h1>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
+            <h1 class="forhone">Contact  Us</h1>
+            <ul class="displayflex firstgap">
+                <li><a href="/index.html" class="forhome">Home</a></li>
                 <li><img src="./img/right.svg" alt="Right arrow" width="8" height="12"></li>
-                <li><a href="/сontact-us.html">Contact-us</a></li>
+                <li><a href="/сontact-us.html" class="forcontactus">Contact-us</a></li>
             </ul>
         </section>
-        <fieldset>
+    <form method="post" action="#"><fieldset class="backgrfield">
             <legend></legend>
             <label for="name">Name</label>
             <input type="text" width="600px" height="50px">
@@ -45,6 +48,7 @@
             <input type="checkbox">By clicking on the button, you consent to the processing of your personal data
             <button type="submit">Submit</button>
         </fieldset>
+    </form>
     </main>
     <footer>
         <nav>

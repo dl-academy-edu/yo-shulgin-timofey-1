@@ -1,0 +1,42 @@
+.forhone {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;   
+    color: #1E0606;
+}  
+
+.forhome {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+}
+
+.forcontactus {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #1E0606;
+    opacity: 0.5;
+}
+
+.displayflex {
+    display: flex;
+}
+
+.firstgap {
+    gap: 20px;
+    margin-bottom: 56px;
+}
+
+.backgrfield {
+    background: #E5EAF8;
+}
