@@ -4,40 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <title>Blog</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="/index.html"><img src="./img/icon/logo.png" alt="Logo" width="100" height="52"></a> 
-        </div>
-        <nav>
-          <ul>
-           <li><a href="/blog.html">BLOG</a></li> 
-           <li><a href="/catalog.html">CATALOG</a></li><!--я перепроперил все подряд не получается почему-то переходить с основы на каталог посмотри что не так просто я уже не знаю что делать-->
-           <li><a href="/about-us.html">ABOUT US</a></li>           
-          </ul>
-          <ul>
-            <li><a href="#"><img src="./img/icon/search.svg" alt="search"></a></li>
-            <li><a href="/contact.html">CONTACT US</a></li>
+    <header class="header container">
+        <a href="/index.html"><img class="header__logo" src="./img/icon/logo.png" alt="Logo" width="101" height="52"></a>
+        <nav class="header__nav left">
+          <ul class="header__list">
+           <li><a href="/blog.html" style="font-family: Open Sans;" class="header__list-link">BLOG</a></li> 
+           <li><a href="/catalog.html" style="font-family: Open Sans;" class="header__list-link">CATALOG</a></li><!--я перепроперил все подряд не получается почему-то переходить с основы на каталог посмотри что не так просто я уже не знаю что делать-->
+           <li><a href="/about-us.html" style="font-family: Open Sans;" class="header__list-link">ABOUT US</a></li>           
           </ul>
         </nav>
+          <ul class="header__list header__nav">
+            <li><a href="#"><img class="search" src="./img/icon/search.svg" alt="Search"></a></li>
+            <li><a href="/contact-us.html" class="header__list-link">CONTACT US</a></li>
+          </ul>
     </header>
-    <main>
+    <main class="container">
         <section>
-            <h1>Blog</h1>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
+            <h1 class="blogh">Blog</h1>
+            <ul class="displayflex homeblog">
+                <li><a href="/index.html" class="crimtext">Home</a></li>
                 <li><img src="./img/right.svg" alt="Right arrow"></li>
-                <li>Blog</li>
+                <li><p class="blogbrcr">Blog</p></li>
             </ul>
-            <ul>
-                <li><img src="./img/lego.jpg" alt="Lego"><p>23rd August 2018</p><h2>Top 5 fastest growing it service companies in philly</h2><p>Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p></li>
-                <li><img src="./img/dinopanda.jpg" alt="Dinopanda"><p>23rd August 2018</p><h2>Best financial</h2><p>Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p></li>
-                <li><img src="./img/rainbowdetails.jpg" alt="Rainbow details"><p>23rd August 2018</p><h2>Company logo or brand identity: which one is more important? brand identity</h2><p>To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p></li>
-                <li><img src="./img/buzzlighter.jpg" alt="Buzz lightear"><p>23rd August 2018</p><h2>Best financial</h2><p>Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p></li>
-                <li><img src="./img/disneyprincess.jpg" alt="Disney princess"><p>23rd August 2018</p><h2>Company logo or brand identity: which one is more important? brand identity</h2><p>Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p></li>
-                <li><img src="./img/luckdice.jpg" alt="Good luck dice"><p>23rd August 2018</p><h2>Top 5 fastest growing it service companies in philly</h2><p>Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p></li>
+            <ul class="displayflex gapfirst forfirstul">
+                <li><img src="./img/lego.jpg" alt="Lego" width="380px" height="220px"><p class="augustdate">23rd August 2018</p><a href="#"><h2 class="forhtwo">Top 5 fastest growing it service companies in philly</h2></a><p class="forp forfirst">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p></li>
+                <li><img src="./img/dinopanda.jpg" alt="Dinopanda" width="380px" height="220px"><p class="augustdate">23rd August 2018</p><a href="#"><h2 class="forhtwo">Best financial</h2></a><p class="forp">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p></li>
+                <li><img src="./img/rainbowdetails.jpg" alt="Rainbow details" width="380px" height="220px"><p class="augustdate">23rd August 2018</p><a href="#"><h2 class="forhtwo">Company logo or brand identity: which one is more important? brand identity</h2></a><p class="forp">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p></li>
+            </ul>
+            <ul class="displayflex gapfirst">
+                <li><img src="./img/buzzlighter.jpg" alt="Buzz lightear" width="380px" height="220px"><p class="augustdate">23rd August 2018</p><a href="#"><h2 class="forhtwo">Best financial</h2></a><p class="forp forfourthp">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p></li>
+                <li><img src="./img/disneyprincess.jpg" alt="Disney princess" width="380px" height="220px"><p class="augustdate">23rd August 2018</p><a href="#"><h2 class="forhtwo forfivethhtwo">Company logo or brand identity: which one is more important? brand identity</h2></a><p class="forp">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p></li>
+                <li><img src="./img/luckdice.jpg" alt="Good luck dice" width="380px" height="220px"><p class="augustdate">23rd August 2018</p><a href="#"><h2 class="forhtwo">Top 5 fastest growing it service companies in philly</h2></a><p class="forp">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p></li>
             </ul>
         </section>
     </main>

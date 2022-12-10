@@ -63,6 +63,17 @@ li {
     margin-right: 20px;
 }
 
+.header__list-linksec {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-right: 20px;
+}
+
 .left {
     margin-right: auto; /*толкает второй список во флексе к правому полю*/
 }

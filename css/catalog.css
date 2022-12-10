@@ -1,0 +1,148 @@
+.catprod {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.gapforway {
+    display: flex;
+    gap: 20px;
+}
+
+.homezag {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+}
+
+.catalogzag {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+    opacity: 0.5;
+}
+
+.apparelkids { 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.apparel {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 16%;
+    right: 25.14%;
+    top: 80.15%;
+    bottom: 5.15%;
+    width: 126px;
+    height: 58px;
+}
+
+.apparelli {
+    width: 280px;
+}
+
+.holidayshop {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.toys {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.displayflex {
+    display: flex;
+}
+
+.gap {
+    gap: 20px;
+}
+
+.marginleft {
+    margin-left: 200px;
+}
+
+.margintop {
+    margin-left: 200px;
+    margin-top: 55px;
+}
+
+.proddesc {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.interdoll {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+    width: 680px;
+    height: 44px;
+    margin-top: 25px;
+}
+
+.toywith {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+    margin-top: 15px;
+    width: 680px;
+    height: 44px;
+}
+
+.setinclud {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+    width: 680px;
+    height: 66px;
+    margin-top: 15px;
+    margin-bottom: 55px;
+}

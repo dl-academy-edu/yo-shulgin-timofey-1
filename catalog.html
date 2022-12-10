@@ -4,49 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/catalog.css">
     <title>Catalog</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="/index.html"><img src="./img/icon/logo.png" alt="Logo" width="100" height="52"></a> 
-        </div>
-        <nav>
-          <ul>
-            <li><a href="/blog.html">BLOG</a></li>
-            <li><a href="/catalog.html">CATALOG</a></li>          
-            <li><a href="/about-us.html">ABOUT US</a></li>           
-          </ul>
-          <ul>
-            <li><a href="#"><img src="./img/icon/search.svg" alt="Search"></a></li>
-            <li><a href="/contact.html">CONTACT US</a></li>
+    <header class="header container">
+        <a href="/index.html"><img class="header__logo" src="./img/icon/logo.png" alt="Logo" width="101" height="52"></a>
+        <nav class="header__nav left">
+          <ul class="header__list">
+           <li><a href="/blog.html" style="font-family: Open Sans;" class="header__list-link">BLOG</a></li> 
+           <li><a href="/catalog.html" style="font-family: Open Sans;" class="header__list-link">CATALOG</a></li><!--я перепроперил все подряд не получается почему-то переходить с основы на каталог посмотри что не так просто я уже не знаю что делать-->
+           <li><a href="/about-us.html" style="font-family: Open Sans;" class="header__list-link">ABOUT US</a></li>           
           </ul>
         </nav>
+          <ul class="header__list header__nav">
+            <li><a href="#"><img class="search" src="./img/icon/search.svg" alt="Search"></a></li>
+            <li><a href="/contact-us.html" class="header__list-link">CONTACT US</a></li>
+          </ul>
     </header>
-    <section>
-        <h1>Category Products</h1>
-        <ul class="breadcrumbs">
-            <li><a href="/index.html">Home</a></li>
-            <li><img src="./img/right.svg" alt="Right arrow"></li>
-            <li>Catalog</li>
+    <section class="container">
+        <h1 class="catprod">Category Products</h1>
+        <ul class="breadcrumbs gapforway">
+            <li><a href="/index.html" class="homezag">Home</a></li>
+            <li><img class="leftarrow" src="./img/right.svg" alt="Right arrow"></li>
+            <li class="catalogzag">Catalog</li>
         </ul>
     </section>
-    <section>
-        <ul>
-            <li><a href="#">APPAREL KIDS</a><img src="./img/babysweater.jpg" alt="Baby sweater" width="244" height="177"></li>
-            <li><a href="#">HOLIDAY SHOP</a><img src="./img/sockdeer.png" alt="Sock deer" width="208" height="244"></li>
-            <li><a href="#">TOYS</a><img src="./img/woodendeer.jpg" alt="Wooden deer" width="270" height="270"></li>
+    <section class="container">
+        <ul class="displayflex gap">
+            <li class="apparelkids"><a class="apparel" href="#">APPAREL KIDS</a><img src="./img/babysweater.jpg" alt="Baby sweater" width="244" height="177"></li>
+            <li><a class="holidayshop" href="#">HOLIDAY SHOP</a><img src="./img/sockdeer.png" alt="Sock deer" width="208" height="244"></li>
+            <li><a class="toys" href="#">TOYS</a><img src="./img/woodendeer.jpg" alt="Wooden deer" width="270" height="270"></li>
+        </ul>
+        <ul class="displayflex gap marginleft">
             <li><a href="#">ACCESSORIES</a><img src="./img/monkeyontheskate.png" alt="Monkey on the skate" width="240" height="250"></li>
             <li><a href="#">SALE</a><img src="./img/flamingo.png" alt="Pink flamingo" width="248" height="248"></li>
             <li><a href="#">APPAREL ADULTS</a><img src="./img/shirt.png" alt="Pink shirt" width="271" height="204"></li>
         </ul>
     </section>
-    <section>
-        <h2>Product Description</h2>
+    <section class="container margintop">
+        <h2 class="proddesc">Product Description</h2>
         <ul>
-            <li><p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p></li>
-            <li><p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p></li>
-            <li><p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p></li>
+            <li><p class="interdoll">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p></li>
+            <li><p class="toywith">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p></li>
+            <li><p class="setinclud">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p></li>
         </ul>
     </section>
     <footer>
