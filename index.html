@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/script.js">
     <title>Main</title>
     <style>
         /*Rating*/
@@ -80,13 +81,13 @@
             <div>
                 <p class="p__one">01</p>
             <ul class="btn__block">
-                <li><button type="button" class="btn__line"></button></li>
-                <li><button type="button" class="btn__line"></button></li>
-                <li><button type="button" class="btn__line"></button></li>
-                <li><button type="button" class="btn__line"></button></li>
+                <li><button type="button" class="btn__line secgridgap"></button></li>
+                <li><button type="button" class="btn__line secgridgap"></button></li>
+                <li><button type="button" class="btn__line secgridgap"></button></li>
+                <li><button type="button" class="btn__line secgridgap"></button></li>
             </ul>
             </div>
-            <div class="banner__inner">
+            <div class="banner__inner posrel">
                 <h1 class="title onc">THE OOH NOO COLLECTION</h1>
                 <p class="notion">Designed in Slovenia</p>
                 <button type="button" class="btn marginright">EXPLORE NOW</button>
@@ -100,10 +101,10 @@
     <section class="container">
         <h2>Category Products</h2>
         <ul class="pupa">
-            <li><a href="#">APPAREL KIDS</a><img src="./img/babysweater.jpg" alt="Baby sweater" width="244" height="177"></li>
-            <li><a href="#">HOLIDAY SHOP</a><img src="./img/sockdeer.png" alt="Sock deer" width="208" height="244"></li>
-            <li><a href="#">TOYS</a><img src="./img/woodendeer.jpg" alt="Wooden figurine of a deer" width="270" height="270"></li>
-            <li><a href="#">ACCESSORIES</a><img src="./img/monkeyontheskate.png" alt="monkey on a skateboard" width="240" height="250"></li>
+            <li class="alcent"><a href="#" class="akhsta apparelkids">APPAREL KIDS</a><img class="apparelbackgr" src="./img/babysweater.jpg" alt="Baby sweater" width="244" height="177"></li>
+            <li><a href="#" class="akhsta">HOLIDAY SHOP</a><img src="./img/sockdeer.png" alt="Sock deer" width="208" height="244"></li>
+            <li><a href="#" class="akhsta">TOYS</a><img src="./img/woodendeer.jpg" alt="Wooden figurine of a deer" width="270" height="270"></li>
+            <li><a href="#" class="akhsta">ACCESSORIES</a><img src="./img/monkeyontheskate.png" alt="monkey on a skateboard" width="240" height="250"></li>
         </ul>
         <ul class="pupa">    
         <li><button type="button"><img src="./img/left.svg" alt="Arrow left" width="13" height="26"></button></li>
@@ -150,10 +151,16 @@
         <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.537027345575!2d49.28883502508566!3d53.512465281983786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879a82611632d%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1668783377206!5m2!1sru!2sru" frameborder="0"></iframe>
     </section>
-    <footer>
-        <nav>
+    <footer class="footerbackgr">
+        <nav class="container">
+        <ul class="displayflex">
+            <li class="marbott"><p>Navigation</p></li>
+            <li class="customerinfosec"><p>Customer Information</p></li>
+            <li><p>Connect</p></li>
+        </ul>
+        <ul class="displayflex">
+        <li>
             <ul>
-                <li>Navigation</li>
                 <li><a href="/about-us.html">About Us</a></li>
                 <li><a href="/blog.html">Blog</a></li>
                 <li><a href="#">Design Services</a></li>
@@ -161,8 +168,9 @@
                 <li><a href="#">2018 Holiday Catalog</a></li>
                 <li><a href="#">Shop By Designer</a></li>
             </ul>
-            <ul>
-                <li>Customer Information</li>              
+        </li>
+        <li class="customerinfo">
+            <ul>               
                 <li><a href="/contact.html">Contact Us</a></li>
                 <li><a href="#">Sale Exclusions</a></li>
                 <li><a href="#">Shipping & Returns</a></li>
@@ -170,10 +178,9 @@
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Search</a></li>
             </ul>
+        </li>
+        </ul>
         </nav>
-        <ul>
-            <li><p>Connect</p></li>            
-        </ul>   
         <input type="text" name="text" placeholder="Email">  
         <button type="submit">JOIN</button>   
         <ul>
@@ -185,11 +192,21 @@
         <hr>
             <ul>
                 <li><a href="#">Company Rating</a></li>
-                <li><img src="./img/icon/star.svg" alt="Звезда 1"></li>
-                <li><img src="./img/icon/star.svg" alt="Звезда 2"></li>
-                <li><img src="./img/icon/star.svg" alt="Звезда 3"></li>
-                <li><img src="./img/icon/star.svg" alt="Звезда 4"></li>
-                <li><img src="./img/icon/star.svg" alt="Звезда 5"></li>
+                <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z" />
+                </svg>
+                <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z" />
+                </svg>
+                <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z" />
+                </svg>
+                <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z" />
+                </svg>
+                <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z" />
+                </svg>
                 <li><a href="#">Copyright © 2018 Dlk • Design Life Kids</a></li>
                 <li><a href="#">Web Design — Direct Line Development</a>
                 </li>

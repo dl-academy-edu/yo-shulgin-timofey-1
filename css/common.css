@@ -112,3 +112,23 @@ li {
     left: 243px;
     top: 474px;*/
 }
+
+.displayflex {
+    display: flex;
+}
+
+.footerbackgr {
+    background-color: #434343;
+}
+
+.customerinfo {
+    margin-left: 242px;
+}
+
+.marbott {
+    margin-bottom: 52px;
+}
+
+.customerinfosec {
+    margin-left: 320px;
+}
