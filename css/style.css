@@ -88,11 +88,18 @@
 
 .pupa {
     display: flex;
-    margin-top: 121px;
+    gap: 25px;
+}
+
+.pupaarrow {
+    display: flex;
+    gap: 6px;
+    margin-top: 33px;
+    margin-bottom: 94px;
 }
 
 .podpupa {
-    width: 580px;
+    width: 514px;
     height: 44px;
     margin-left: 20px;
     font-family: 'Open Sans';
@@ -118,12 +125,18 @@
 }
 
 .secdelivery {
+    margin-left: -60px;
     font-family: 'Crimson Text';
     font-style: italic;
     font-weight: 700;
     font-size: 26px;
     line-height: 34px;
     color: #1E0606;
+    background-color: #70BBDC33;
+    width: 326px;
+    height: 55px;
+    padding-top: 11px;
+    padding-left: 60px;
 }
 
 .guarantee {
@@ -145,12 +158,13 @@
 }
 
 .somedays {
-    padding-top: 30px;
+    width: 455px;
+    height: 66px;
 }
 
-
 .whatstarted {
-    padding-top: 30px;
+    width: 460px;
+    height: 88px;
 }
 
 .logos {
@@ -183,38 +197,168 @@
 }
 
 .apparelkids {
-    position: absolute;
-    left: 26.79%;
-    right: 27.14%;
-    top: 38.15%;
-    bottom: 38.15%;
     width: 129px;
     height: 64px;
 }
 
-.apparelbackgr {
-    background-color: #DBE4DB;
-    width: 280px;
-    height: 270px;
-}
-
-.holidayshop {
-
-}
-
-.toys {
-
-}
-
-.accessories {
-
-}
-
 .alcent {
+    display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
 }
 
-.forfoh {
-    
+.categoryprod {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.holshop {
+    background: #EADDD3;
+    width: 280px;
+    height: 270px;
+}
+
+.appkids {
+    background: #DBE4DB;
+    width: 280px;
+    height: 270px;
+}
+
+.toys {
+    background: #F8F2DA;
+    width: 280px;
+    height: 270px;
+}
+
+.accessories {
+    background: #D5D4E1;
+    width: 280px;
+    height: 270px;
+}
+
+.link__position {
+    position: absolute;
+
+}
+
+.link__infosec {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    width: 148px;
+    height: 40px;
+    background: #000000;
+    padding-top: 9px;
+    padding-left: 22px;
+}
+
+.delgua {
+    margin-bottom: 22px;
+}
+
+.r__l__arrow {
+    background-image: url(../img/right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #70BBDC33;
+    width: 37px;
+    height: 37px;
+}
+
+.l__r__arrow {
+    background-image: url(../img/left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #70BBDC33;
+    width: 37px;
+    height: 37px;
+}
+
+.partner__logos__gap {
+    gap: 127px;
+    margin-bottom: 90px;
+}
+
+.des__con {
+    display: flex;
+    gap: 57px;
+}
+
+.des_con_sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.des__life {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-bottom: 10px;
+}
+
+.des__lifesec {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-bottom: 20px;
+}
+
+.dome__says {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+    width: 505px;
+}
+.about__ussec {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
+    margin-bottom: 10px;
+}
+
+.btnsec {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: none;
+    padding: 9px 22px;
+    background: #000;
+    width: 123px;
+    margin-top: 20px;
+}
+
+.div__back {
+    background: #E1F0F7;
+    width: 543px;
+    height: 228px;
+    margin-bottom: 155px;
+    margin-left: 30px;
 }

@@ -31,6 +31,10 @@ li {
     list-style-type: none; /*прописать во всех списках li, убирает точку в списках*/
 }
 
+button {
+    border: none;
+}
+
 /* стилизация header */
 
 .header {
