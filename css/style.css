@@ -18,6 +18,7 @@
     font-size: 40px;
     line-height: 110%;
     color: #1E0606;
+    margin-top: 17px;
 }
 
 .notion {
@@ -246,7 +247,6 @@
 
 .link__position {
     position: absolute;
-
 }
 
 .link__infosec {
@@ -320,6 +320,7 @@
     text-transform: uppercase;
     color: #1E0606;
     margin-bottom: 20px;
+    margin-top: -24px;
 }
 
 .dome__says {
@@ -329,7 +330,7 @@
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
-    width: 505px;
+    width: 486px;
 }
 .about__ussec {
     font-family: 'Crimson Text';
@@ -361,4 +362,25 @@
     height: 228px;
     margin-bottom: 155px;
     margin-left: 30px;
+}
+
+.nad__footer {
+    margin-left: 30px;
+}
+
+.nad__footer__h__one {
+    margin-left: 30px;
+    margin-top: -25px;
+}
+
+.div__back__sec {
+    background: #E1F0F7;
+    width: 543px;
+    height: 228px;
+    margin-bottom: 155px;
+    margin-left: 30px;
+}
+
+.for__iframe {
+    margin-top: 30px;
 }

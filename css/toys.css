@@ -1,0 +1,132 @@
+a {
+    color: #000;
+}
+
+/* стилизация бредкрампс */
+
+.toy__for__kids {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-bottom: 15px;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 20px;
+}
+
+/* стилизация бредкрампс закончена */
+
+/* стилизация фильтра */
+
+.form__back__gr {
+    background: #7D97DA33;
+    height: 254px;
+}
+
+.h__two__op {
+    opacity: 0%;
+}
+
+.form__border {
+    border: none;
+}
+
+.disp {
+    display: flex;
+}
+
+.form__range {
+    flex-direction: column;
+    margin-right: 94px;
+}
+
+.flex__dir {
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* стилизация фильтра закончена */
+
+/* стилизация списка товаров */
+
+.for__scroll {
+    display: flex;
+    gap: 20px;
+}
+
+.for__ul__cell {
+    flex-direction: column;
+}
+
+.for__name__li {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #1E0606;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.for__name__lisec {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #1E0606;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* стилизация списка товаров закончена */
+
+/* стилизация переключателей страниц товаров */
+
+.for__arrow__left {
+    background-image: url(img/rightarrowtoys.svg);
+    border: 4px solid rgba(30, 6, 6, 0.12);
+    margin-right: 457px;
+}
+
+.for__arrow__right {
+    background-image: url(img/leftarrowtoys.svg);
+    border: 4px solid rgba(30, 6, 6, 0.12);
+    margin-left: 457px;
+}
+
+.inc__ul {
+    display: flex;
+    margin-top: 53px;
+}
+
+.number__page {
+    display: flex;
+    gap: 64px;
+}
+
+/* стилизация переключателей страниц товаров окончена */

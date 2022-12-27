@@ -40,3 +40,15 @@
 .backgrfield {
     background: #E5EAF8;
 }
+
+.form__border {
+    border: none;
+}
+
+.form__column {
+    flex-direction: column;
+}
+
+.email__phone {
+    display: flex;
+}

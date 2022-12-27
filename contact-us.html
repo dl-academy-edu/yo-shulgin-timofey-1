@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/contact-us.css">
     <title>Contact Us</title>
@@ -35,13 +34,19 @@
                 <li><a href="/сontact-us.html" class="forcontactus">Contact-us</a></li>
             </ul>
         </section>
-    <form method="post" action="#"><fieldset class="backgrfield">
+    <form method="post" action="#"><fieldset class="backgrfield form__border form__column">
             <legend></legend>
             <label for="name">Name</label>
-            <input type="text" width="600px" height="50px">
-            <label for="phone">Phone</label>
-            <input type="text" width="290" height="50">
-            <label for="email">Email</label>
+            <input placeholder="Ivan Ivanov" class="inl" type="text" width="600px" height="50px">
+        <ul class="email__phone">
+            <li>
+                <label for="phone">Phone</label>
+            </li>
+            <li>
+                <input type="text" width="290" height="50">
+                <label for="email">Email</label>
+            </li>
+        </ul>
             <input type="email" width="290" height="50">
             <label for="message">Message</label>
             <input type="text" width="600" height="150">

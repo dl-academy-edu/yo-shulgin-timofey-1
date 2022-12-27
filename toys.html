@@ -4,37 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOYS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap'); </style>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/toys.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Toys</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="/index.html"><img src="./img/icon/logo.png" alt="Logo" width="100" height="52"></a> 
-        </div>
-        <nav>
-          <ul>
-           <li><a href="/blog.html">BLOG</a></li> 
-           <li><a href="/catalog.html">CATALOG</a></li>
-           <li><a href="/about-us.html">ABOUT US</a></li>           
-          </ul>
-          <ul>
-            <li><a href="#"><img src="./img/icon/search.svg" alt="Search"></a></li>
-            <li><a href="/contact.html">CONTACT US</a></li>
+    <header class="header container">
+        <a href="/index.html"><img class="header__logo" src="./img/icon/logo.png" alt="Logo" width="101" height="52"></a>
+        <nav class="header__nav left">
+          <ul class="header__list">
+           <li><a href="/blog.html" style="font-family: Open Sans;" class="header__list-link">BLOG</a></li> 
+           <li><a href="/catalog.html" style="font-family: Open Sans;" class="header__list-link">CATALOG</a></li><!--я перепроперил все подряд не получается почему-то переходить с основы на каталог посмотри что не так просто я уже не знаю что делать-->
+           <li><a href="/about-us.html" style="font-family: Open Sans;" class="header__list-link">ABOUT US</a></li>           
           </ul>
         </nav>
+          <ul class="header__list header__nav">
+            <li><a href="#"><img class="search" src="./img/icon/search.svg" alt="search"></a></li>
+            <li><a href="/contact-us.html" class="header__list-link">CONTACT US</a></li>
+          </ul>
     </header>
     <main>
-    <h1>Toy for kids</h1>
-    <ul>
+    <h1 class="toy__for__kids container">Toy for kids</h1>
+    <ul class="container breadcrumbs">
         <li><a href="/index.html">Home</a></li>
-        <li><img src="./img/right.svg" alt="Right arrow" width="8" height="12"></li>
+        <li><img src="./img/rightsec.svg" alt="Right arrow" width="8" height="12"></li>
         <li><a href="/сatalog.html">Catalog</a></li>
         <li><img src="./img/right.svg" alt="Right arrow" width="8" height="12"></li>
         <li>Toys</li>
     </ul>
-    <section>
-        <h2>Filter</h2><!--его надо будет скрыть так так его нет в дизайне-->
-            <fieldset>
+        <h2 class="h__two__op">Filter</h2><!--его надо будет скрыть так так его нет в дизайне-->
+    <section class="form__back__gr disp">
+        <form class="disp container" action="">
+            <fieldset class="form__border form__range">
+                <label for="Cost">Cost</label>
+                <input type="range">
+            <ul class="disp">
+                <label class="" for="Number">0</label>
+                <label for="Number">500</label>
+            </ul>
+            </fieldset>
+            <fieldset class="form__border">
                 <legend>Color</legend>
                 <input type="checkbox" name="Black" value="black" id="colour_black">
                 <label for="colour_black">Black</label>
@@ -45,14 +57,14 @@
                 <input type="checkbox" name="White" value="white" id="colour_white">
                 <label for="colour_white">White</label>
             </fieldset>
-            <fieldset>
+            <fieldset class="form__border">
                 <legend>Delivery</legend>
                 <input type="radio" name="Free shipping">
                 <label for="Free shipping">Free shipping</label>
                 <input type="radio" name="Fast shipping">
                 <label for="Fast shipping">Fast shipping</label>
             </fieldset>
-            <fieldset>
+            <fieldset class="form__border">
                 <legend>Amount</legend>
                 <input type="radio" value="0-5">
                 <label for="0-5">0-5</label>
@@ -61,37 +73,55 @@
                 <input type="radio" value="20-50">
                 <label for="20-50">20-50</label>
             </fieldset>
-            <button type="button">APPLY</button>
+        </form>
+            <button class="btn" type="button">APPLY</button>
     </section>
     </main>
-    <section>
+    <section class="container">
         <ul>
+        <ul class="for__scroll">
+        <ul class="for__ul__cell">
             <li><img src="./img/sharkcover.jpg" alt="Shark chair cover" width="380" height="385"></li>
-            <li><a href="#">SHARKY BEAN BAG CHAIR COVER</a></li>
-            <li>$60.00 USD</li>
-            <li><img src="./img/brassframes.jpg" alt="Brass deco frames" width="380" height="385"></li>
-            <li><a href="#">BRASS DECO FRAMES</a></li>
-            <li>$66.00 USD</li>
-            <li><img src="./img/fullapron.jpg" alt="Full apron CIBO" width="380" height="385"></li>
-            <li><a href="#">CIBO FULL APRON</a></li>
-            <li>$60.00 USD</li>
-            <li><img src="./img/gumballmachine.jpg" alt="Gumball machine" width="380" height="385"></li>
-            <li><a href="#">GATCHA GATCHA GUMBALL MACHINE</a></li>
-            <li>$56.00 USD</li>
-            <li><img src="./img/scentedcandle.jpg" alt="Christmas scented candle" width="380" height="385"></li>
-            <li><a href="#">CHRISTMAS ADVENT SCENTED CANDLE</a></li>
-            <li>$29.00 USD</li>
-            <li><img src="./img/tealight.jpg" alt="Tea light" width="380" height="382"></li>
-            <li><a href="#">TANGLE SPINNING TEA LIGHT</a></li>
-            <li>$56.00 USD</li>
+            <li class="for__name__li"><a href="#">SHARKY BEAN BAG CHAIR COVER</a></li>
+            <li class="for__name__lisec">$60.00 USD</li>
         </ul>
-        <ul>
-            <li><button></button></li>
+        <ul class="for__ul__cell">
+            <li><img src="./img/brassframes.jpg" alt="Brass deco frames" width="380" height="385"></li>
+            <li class="for__name__li"><a href="#">BRASS DECO FRAMES</a></li>
+            <li class="for__name__lisec">$66.00 USD</li>
+        </ul>
+        <ul class="for__ul__cell">
+            <li><img src="./img/fullapron.jpg" alt="Full apron CIBO" width="380" height="385"></li>
+            <li class="for__name__li"><a href="#">CIBO FULL APRON</a></li>
+            <li class="for__name__lisec">$60.00 USD</li>
+        </ul>
+        </ul>
+        <ul class="for__scroll">
+        <ul class="for__ul__cell">
+            <li><img src="./img/gumballmachine.jpg" alt="Gumball machine" width="380" height="385"></li>
+            <li class="for__name__li"><a href="#">GATCHA GATCHA GUMBALL MACHINE</a></li>
+            <li class="for__name__lisec">$56.00 USD</li>
+        </ul>
+        <ul class="for__ul__cell">
+            <li><img src="./img/scentedcandle.jpg" alt="Christmas scented candle" width="380" height="385"></li>
+            <li class="for__name__li"><a href="#">CHRISTMAS ADVENT SCENTED CANDLE</a></li>
+            <li class="for__name__lisec">$29.00 USD</li>
+        </ul>
+        <ul class="for__ul__cell">
+            <li><img src="./img/tealight.jpg" alt="Tea light" width="380" height="382"></li>
+            <li class="for__name__li"><a href="#">TANGLE SPINNING TEA LIGHT</a></li>
+            <li class="for__name__lisec">$56.00 USD</li>
+        </ul>
+        </ul>
+        <ul class="container inc__ul">
+            <li><button class="for__arrow__left" type="button"></button></li>
+        <ul class="number__page">
             <li>1</li>
             <li>2</li>
             <li>3</li>
             <li>4</li>
-            <li><button></button></li>
+        </ul>
+            <li><button class="for__arrow__right" type="button"></button></li>
         </ul>
     </section>
     <footer>
