@@ -282,3 +282,153 @@ button {
 }
 
 /* end COMPANY RATING */
+
+
+
+/* FORM */
+
+.popup {
+    display: none;
+    top: 25%;
+    left: 30%;
+    position: absolute;
+}
+
+.open {
+    display: flex;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: #7D97DACC;
+}
+ 
+.popup__wr {
+    display: flex;
+    z-index: 20;
+}
+
+.close {
+    background: none;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/icon/close.svg');
+    border: none;
+}
+
+.contact__form {
+    max-width: 680px;
+    background: #E5EAF8;
+    padding: 20px 40px 42px 40px;
+}
+
+.input__element {
+    display: flex;
+    gap: 20px;
+}
+
+.label__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contact__label {
+    margin-bottom: 3px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+}
+
+.contact__input {
+    /* max-width: 600px; */
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact__input::placeholder {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+    padding: 20px;
+}
+
+.contact__input-two {
+    width: 290px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.checkbox_position {
+    margin-top: 20px;
+}
+
+.checkbox_input {
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+}
+
+.checkbox__label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    margin-left: 20px;
+}
+
+.checkbox__label::before {
+    content: "";
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background-image: url("../img/icon/input.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+}
+
+.checkbox_input:checked + .checkbox__label::before {
+    content: "";
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background-image: url("../img/icon/checked.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+}
+
+.btn__submit {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 9px 22px;
+    margin-top: 17px;
+    background: #000000;
+}
+
+/* END FORM */
+
+

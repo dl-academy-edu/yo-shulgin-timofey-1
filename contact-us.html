@@ -34,26 +34,41 @@
                 <li><a href="/сontact-us.html" class="forcontactus">Contact-us</a></li>
             </ul>
         </section>
-    <form method="post" action="#"><fieldset class="backgrfield form__border form__column">
-            <legend></legend>
-            <label for="name">Name</label>
-            <input placeholder="Ivan Ivanov" class="inl" type="text" width="600px" height="50px">
-        <ul class="email__phone">
-            <li>
-                <label for="phone">Phone</label>
-            </li>
-            <li>
-                <input type="text" width="290" height="50">
-                <label for="email">Email</label>
-            </li>
-        </ul>
-            <input type="email" width="290" height="50">
-            <label for="message">Message</label>
-            <input type="text" width="600" height="150">
-            <input type="checkbox">By clicking on the button, you consent to the processing of your personal data
-            <button type="submit">Submit</button>
-        </fieldset>
-    </form>
+        <div class="popup">
+            <div class="popup__wr">
+                <form method="post" action="#" class="contact__form">
+                    <div class="container label__wrapper">
+                        <label class="contact__label" for="Name">Name</label>
+                        <input class="contact__input" type="text" placeholder="Ivan Ivanov">       
+                    </div>
+                    <div class="container input__element">
+                        <div class="label__wrapper">
+                            <label class="contact__label" for="Phone">Phone</label>
+                            <input class="contact__input-two" type="text">       
+                        </div>
+                        <div class="container label__wrapper">
+                            <label class="contact__label" for="Email">Email</label>
+                            <input class="contact__input-two" type="text">       
+                        </div>
+                    </div>
+                    <div class="container">
+                        <ul>
+                            <li class="label__wrapper">
+                                <label class="contact__label" for="Message">Message</label>
+                                <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                            </li>
+                            <li class="checkbox_position">
+                                <input class="checkbox_input" id="checkbox" type="checkbox">
+                                <label class="checkbox__label" for="checkbox">By clicking on the button, you consent to the processing of your personal data</label>
+                            </li>
+                        </ul>
+                        <button class="btn__submit" type="submit">SUBMIT</button>    
+                    </div> 
+                </form>
+                <button type="button" class="close"></button>
+            </div> 
+            <div class="overlay"></div>
+        </div>
     </main>
     <footer>
         <nav>
