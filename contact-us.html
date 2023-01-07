@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/contact-us.css">
     <title>Contact Us</title>
 </head>
 <body>
-    <header class="header container">
+    <header class="headersec container">
         <a href="/index.html"><img class="header__logo" src="./img/icon/logo.png" alt="Logo" width="101" height="52"></a>
         <nav class="header__nav left">
           <ul class="header__list">
@@ -31,11 +34,11 @@
             <ul class="displayflex firstgap">
                 <li><a href="/index.html" class="forhome">Home</a></li>
                 <li><img src="./img/right.svg" alt="Right arrow" width="8" height="12"></li>
-                <li><a href="/сontact-us.html" class="forcontactus">Contact-us</a></li>
+                <li><a href="/сontact-us.html" class="forcontactus brcrri">Contact us</a></li>
             </ul>
         </section>
-        <div class="popup">
-            <div class="popup__wr">
+        <div class="main__sec">
+            <div class="popup__wr form__mar">
                 <form method="post" action="#" class="contact__form">
                     <div class="container label__wrapper">
                         <label class="contact__label" for="Name">Name</label>
@@ -65,56 +68,82 @@
                         <button class="btn__submit" type="submit">SUBMIT</button>    
                     </div> 
                 </form>
-                <button type="button" class="close"></button>
-            </div> 
-            <div class="overlay"></div>
+                <button type="button"></button>
+            </div>
+            <ul>
+            <li><p class="firstli marli">Our support team are on-hand to assist with any issues you are experiencing.</p></li>
+            <li><p class="firstli marli">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p></li>
+            <li><p class="thirdli">An expert is waiting to help you!</p></li>
+            </ul>
         </div>
     </main>
-    <footer>
+    <footer class="footerbackgr">
         <nav>
+            <div class="footer__nav container">
             <ul>
-                <li>Navigation</li>
-                <li><a href="/about-us.html">About Us</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#">Design Services</a></li>
-                <li><a href="#">Featured On</a></li>
-                <li><a href="#">2018 Holiday Catalog</a></li>
-                <li><a href="#">Shop By Designer</a></li>
+                <li class="bor__bot"><p class="navcuscon">Navigation</p></li>
+                <li class="foot__marbot foot__mt"><a class="foot__text" href="/about-us.html">About Us</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="/blog.html">Blog</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">Design Services</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">Featured On</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">2018 Holiday Catalog</a></li>
+                <li class="foot__mb"><a class="foot__text" href="#">Shop By Designer</a></li>                
             </ul>
             <ul>
-                <li>Customer Information</li>              
-                <li><a href="/contact.html">Contact Us</a></li>
-                <li><a href="#">Sale Exclusions</a></li>
-                <li><a href="#">Shipping & Returns</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Search</a></li>
+                <li class="bor__bot"><p class="navcuscon">Customer Information</p></li>
+                <li class="foot__marbot foot__mt"><a class="foot__text" href="/contact.html">Contact Us</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">Sale Exclusions</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">Shipping & Returns</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">Terms & Conditions</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">Privacy Policy</a></li>
+                <li class="foot__marbot foot__mb"><a class="foot__text" href="#">Search</a></li>               
             </ul>
-        </nav>
-        <ul>
-            <li><p>Connect</p></li>            
-        </ul>   
-        <input type="text" name="text" placeholder="Email">  
-        <button type="submit">JOIN</button>   
-        <ul>
-            <li><a href="https://www.facebook.com/"><img src="./img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
-            <li><a href="https://twimg.com/"><img src="./img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
-            <li><a href="https://pinterest.com/"><img src="./img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
-            <li><a href="http://instagram.com/"><img src="./img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
+        <ul class="">
+            <li class="bor__bot"><p class="navcuscon">Connect</p></li>
+            <li>        
+                <div class="mail__block foot__mt">  
+            <input class="mail__input" type="text" name="text" placeholder="Email">  
+            <button class="input__btn" type="submit">JOIN</button>  
+        </div>
+        <div>
+            <ul class="icons__footer">
+                <li><a href="https://www.facebook.com/"><img src="./img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
+                <li><a href="https://twimg.com/"><img src="./img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
+                <li><a href="https://pinterest.com/"><img src="./img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
+                <li><a href="http://instagram.com/"><img src="./img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
+            </ul>
+        </div>
         </ul>
-        <hr>
-            <ul>
-                <li><a href="#">Company Rating</a></li>
-                <li><img src="./img/icon/star.svg" alt="Звезда 1"></li>
-                <li><img src="./img/icon/star.svg" alt="Звезда 2"></li>
-                <li><img src="./img/icon/star.svg" alt="Звезда 3"></li>
-                <li><img src="./img/icon/star.svg" alt="Звезда 4"></li>
-                <li><img src="./img/icon/star.svg" alt="Звезда 5"></li>
-                <li><a href="#">Copyright © 2018 Dlk • Design Life Kids</a></li>
-                <li><a href="#">Web Design — Direct Line Development</a>
-                </li>
-            </ul>
-        </section>
+        </nav>
+        </div>
+        <ul class="container footer__navsec">
+            <li>
+                <div class="container finish">
+                <div class="form__item">
+                    <div class="form__label">Company Rating</div>
+                    <div class="simple__rating">
+                        <div class="simple-rating__items">
+                            <input id="simple-rating-5" type="radio" class="simple-rating__item" name="simple-rating" value="5">
+                            <label for="simple-rating-5" class="simple-rating__label"></label>
+                            <input id="simple-rating-4" type="radio" class="simple-rating__item" name="simple-rating" value="4">
+                            <label for="simple-rating-4" class="simple-rating__label"></label>
+                            <input id="simple-rating-3" type="radio" class="simple-rating__item" name="simple-rating" value="3">
+                            <label for="simple-rating-3" class="simple-rating__label"></label>
+                            <input id="simple-rating-2" type="radio" class="simple-rating__item" name="simple-rating" value="2">
+                            <label for="simple-rating-2" class="simple-rating__label"></label>
+                            <input id="simple-rating-1" type="radio" class="simple-rating__item" name="simple-rating" value="1">
+                            <label for="simple-rating-1" class="simple-rating__label"></label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="bordersec foot__copymar">
+            <a class="foot__text" href="#">Copyright © 2018 Dlk • Design Life Kids</a>
+            </li>
+            <li>
+                <a class="navcuscon" href="#">Web Design — Direct Line Development</a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>

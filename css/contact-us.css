@@ -52,3 +52,47 @@
 .email__phone {
     display: flex;
 }
+
+.form__mar {
+    margin-bottom: 60px;
+}
+
+.main__sec {
+    display: flex;
+    gap: 20px 120px;
+}
+
+.firstli {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.thirdli {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #C29974;
+    width: 380px;
+}
+
+.marli {
+    margin-bottom: 20px;
+}
+
+.headersec {
+    display: flex; /*задает блок*/
+    margin-top: 50px; /*отступ сверху*/
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.brcrri {
+    border: none;
+}
