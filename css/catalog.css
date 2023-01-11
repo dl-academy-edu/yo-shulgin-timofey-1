@@ -160,3 +160,35 @@
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
     width: 155px;
 }
+
+.monk__skate {   
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.monkback {
+    background: #D5D4E1;
+}
+
+.salewow {
+    background: #F3D0DB;
+}
+
+.apparel__adults {
+    background: #E5EAF8;
+}
+
+.brcrar {
+    margin-top: 7px;
+}
+
+.marbotbrcr {
+    margin-bottom: 50px;
+}
